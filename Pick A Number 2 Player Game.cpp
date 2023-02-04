@@ -45,7 +45,7 @@ int main() {
         }
         sort(ans,ans+sz_ar, greater<int>());
         cout << ans;
-        if (cnt==4) {
+        if (cnt==sz_ar) {
             cout << "\nYou Won!";
             return 0;
         }
