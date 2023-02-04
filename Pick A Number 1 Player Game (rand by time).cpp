@@ -8,7 +8,7 @@ int s[sz_ar];//you can change this to any array u want
 int a[sz_ar]; int cpy[sz_ar];
 
 void shuffle(size_t n) {
-     if (n>1) {
+    if (n>1) {
 	srand(time(NULL));
 	size_t i;
 	for (i=0; i<n-1; i++) {
@@ -18,7 +18,7 @@ void shuffle(size_t n) {
 		num[i]=t;
 	}
 	for(int k=0;k<sz_ar;k++) s[k]=num[k]; 
-     }
+    }
 }
 
 bool binser(int l, int r, int cnt){
@@ -32,6 +32,7 @@ bool binser(int l, int r, int cnt){
 }
 
 int main() {
+	cout << "https://github.com/MathiasAdya\n\n";
     cout << "THE SEQUENCE CONTAINS 6 INTEGERS FROM 0-n\n";
     cout << "How many tries you want to guess: ";
     int t;cin>>t;//you can change this depending on how many tries you want to give the user
