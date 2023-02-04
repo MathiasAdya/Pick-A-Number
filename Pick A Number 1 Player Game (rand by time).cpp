@@ -3,6 +3,7 @@
 using namespace std;
 
 const int sz_ar=6;//you change this to change the size of the array
+const int sz_num=10;
 int num[10]={0,1,2,3,4,5,6,7,8,9};
 int s[sz_ar];//you can change this to any array u want
 int a[sz_ar]; int cpy[sz_ar];
@@ -39,7 +40,7 @@ int main() {
     cout << "*: a number is on the array but not in the right position\n";
     cout << "@: a number is not on the array\n";
     cout << "#: a number is on the right position\n";
-    shuffle(sz_ar);
+    shuffle(sz_num);
 //    for (int i=0;i<sz_ar;i++) cout << s[i] << " ";
     cout << endl;
     while (t--) {
@@ -78,5 +79,4 @@ int main() {
     cout << "\nAnswer: ";
     for (int i=0;i<sz_ar;i++) cout << s[i] << " ";
     return 0;
-    
 }
