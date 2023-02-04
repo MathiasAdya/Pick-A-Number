@@ -19,7 +19,7 @@ bool binser(int l, int r, int cnt){
 }
 
 int answer() {
-	char ans[sz_ar];
+    char ans[sz_ar];
     cout << "0-9: ";//you can change this
     for (int i=0;i<sz_ar;i++){
         cin>>a[i];
@@ -60,7 +60,7 @@ void shuffle(size_t n) {
 }
 
 int main() {
-	cout << "https://github.com/MathiasAdya\n\n";
+    cout << "https://github.com/MathiasAdya\n\n";
     cout << "THE SEQUENCE CONTAINS 6 INTEGERS FROM 0-n\n";
     cout << "How many tries you want to guess: ";
     int t;cin>>t;//you can change this depending on how many tries you want to give the user
