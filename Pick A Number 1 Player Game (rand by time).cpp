@@ -8,17 +8,17 @@ int s[sz_ar];//you can change this to any array u want
 int a[sz_ar]; int cpy[sz_ar];
 
 void shuffle(size_t n) {
-	if (n>1) {
-		srand(time(NULL));
-		size_t i;
-		for (i=0; i<n-1; i++) {
-			size_t j=i+rand()/(RAND_MAX/(n-i)+1);
-			size_t t=num[j];
-			num[j]=num[i];
-			num[i]=t;
-		}
-		for(int k=0;k<sz_ar;k++) s[k]=num[k]; 
+     if (n>1) {
+	srand(time(NULL));
+	size_t i;
+	for (i=0; i<n-1; i++) {
+		size_t j=i+rand()/(RAND_MAX/(n-i)+1);
+		size_t t=num[j];
+		num[j]=num[i];
+		num[i]=t;
 	}
+	for(int k=0;k<sz_ar;k++) s[k]=num[k]; 
+     }
 }
 
 bool binser(int l, int r, int cnt){
