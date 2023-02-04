@@ -32,8 +32,8 @@ bool binser(int l, int r, int cnt){
 }
 
 int main() {
-	cout << "THE SEQUENCE CONTAINS 6 INTEGERS FROM 0-9";
-	cout << "How many tries you want to guess: ";
+    cout << "THE SEQUENCE CONTAINS 6 INTEGERS FROM 0-n\n";
+    cout << "How many tries you want to guess: ";
     int t;cin>>t;//you can change this depending on how many tries you want to give the user
     cout << "*: a number is on the array but not in the right position\n";
     cout << "@: a number is not on the array\n";
