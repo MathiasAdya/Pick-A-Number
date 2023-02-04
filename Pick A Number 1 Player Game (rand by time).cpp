@@ -20,7 +20,6 @@ bool binser(int l, int r, int cnt){
 
 int answer() {
     char ans[sz_ar];
-    cout << "0-9: ";//you can change this
     for (int i=0;i<sz_ar;i++){
         cin>>a[i];
         cpy[i]=s[i];
@@ -69,15 +68,20 @@ int main() {
     cout << "#: a number is on the right position\n";
     shuffle(sz_num);
 //    for (int i=0;i<sz_ar;i++) cout << s[i] << " ";
+    cout << "Numbers starting from 0-9: ";//you can change this
     cout << endl;
-    while (t--) {
+    int k=1;
+    while (t>0) {
+    	cout << k << ": ";
     	int cnt=answer();
         if (cnt==sz_ar) {
             cout << "\nYou Won!";
             break;
         }
+        --t; 
         if (t==0) cout << "\nYou Lost!";
-        cout << endl;    
+        cout << endl; 
+        k++; 
     }
     cout << "\nAnswer: ";
     for (int i=0;i<sz_ar;i++) cout << s[i] << " ";
