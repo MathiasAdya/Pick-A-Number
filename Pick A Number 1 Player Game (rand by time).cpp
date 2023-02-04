@@ -17,8 +17,8 @@ void shuffle(size_t n) {
 		size_t t=num[j];
 		num[j]=num[i];
 		num[i]=t;
-	}
-	for(int k=0;k<sz_ar;k++) s[k]=num[k]; 
+		s[i]=num[i];
+	} 
     }
 }
 
