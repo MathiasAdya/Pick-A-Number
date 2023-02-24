@@ -4,7 +4,7 @@ using namespace std;
 
 const int sz_ar=6;//you change this to change the size of the array
 const int sz_num=10;
-int num[10]={0,1,2,3,4,5,6,7,8,9};
+int num[sz_num]={0,1,2,3,4,5,6,7,8,9};
 int s[sz_ar];//you can change this to any array u want
 int a[sz_ar]; int cpy[sz_ar];
 
